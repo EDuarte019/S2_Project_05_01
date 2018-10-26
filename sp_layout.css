@@ -40,21 +40,22 @@ a {
 }
 
 /* Row Styles */
+/* For this part i used a pseudo-element so that it expands the element to cover any floating content. */
 .row::after {
     clear: both;
     content: "";
     display: table;
 }
 
-
-
 /* Page Header Styles */
+/* this part is targeting the image inside the header thats inside the body. Then, each has the display block with it floating right and a specific width. */
 body header img {
     display: block;
     width: 70%;
     float: left;
 }
 
+/* the nav inside the header has left and right padding of 2 percent but a wdith of 30 percent while floating left. */
 header nav {
     float: left;
     padding-left: 2%;
@@ -62,6 +63,7 @@ header nav {
     width: 30%;
 }
 
+/* For the hyperlink inside the nav that is inside the header is a display block with a width of 100 percent.  */
 header nav a {
     display: block;
     width: 100%
@@ -70,6 +72,7 @@ header nav a {
 
 
 /* Horizontal Navigation List Styles */
+/* The class horizontal is a display block with a width of 12.5 percent and floats left.  */
 nav.horizontal li {
     display: block;
     width: 12.5%;
@@ -78,6 +81,7 @@ nav.horizontal li {
 
 
 /* Topics Styles */
+/* For the list that has an ID of topics I affected the margin, width and display. */
 ul#topics li {
     display: block;
     width: 20%;
@@ -86,6 +90,7 @@ ul#topics li {
     margin-right: 1.5%;
 }
 
+/* There are two different items, to identify each I set the first of type then the last of type. Then, set the left and right margin. */
 ul#topics li:first-of-type {
     margin-left: 7.75%;
 }
@@ -94,6 +99,7 @@ ul#topics li:last-of-type {
     margin-right: 7.75%;
 }
 
+/* The image nested in the list with an ID of topics is centered horizontally. Also a display block with a width of 50 percent. */
 ul#topics li img {
     margin-left: auto;
     margin-right: auto;
@@ -101,9 +107,8 @@ ul#topics li img {
     width: 50%;
 }
 
-
-
 /* HR Styles */
+/* The break between the elements are 50 percent width. */
 hr {
     width: 50%;
 }
@@ -111,6 +116,7 @@ hr {
 
 
 /* Customer Comment Styles */
+/* For the unordered lists with an ID of comments the margin is set along with the width. */
 ul#comments {
     width: 75%;
     margin-top: 40px;
@@ -119,6 +125,7 @@ ul#comments {
     margin-right: auto;
 }
 
+/* every list has a block element, width, floating left and margin at the bottom. */
 li {
     display: block;
     width: 50%;
@@ -126,6 +133,7 @@ li {
     margin-bottom: 30px;
 }
 
+/* For the images listed in the list elements have a set margin and width. It is a display block. */
 li img {
     display: block;
     width: 20%;
@@ -134,12 +142,14 @@ li img {
     margin-right: 5%;
 }
 
+/* For the paragraphs in the list that has an ID of comments is floating left and has a width of 70 percent. */
 ul#comments li p {
     float: left;
     width: 70%;
 }
 
 /* Footer Styles */
+/* The footer's default is cleared. */
 footer {
     clear: both;
 }
